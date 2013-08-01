@@ -1,13 +1,20 @@
-<div class="jumbotron">
-	<h1>Welcome to One Month Rails!</h1>
-	<p>
-		You've found the homepage for the 
-		<%= link_to "One Month Rails", "http://onemonthrails.com" %> application.
+<% if user_signed_in? %>
+
+<h1> Welcome Member! <h1>
+
+<% else %>
+
+<div class="hero-unit">
+	<h1>Welcome to Reid's Test App!</h1>
+	<p> 
+		<img src= "https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-prn1/65562_10151308334437408_1602982176_n.jpg" height="250px" width="2200px"> 
 	</p>
 	<p>
-		<%= link_to "Sign Up Now!", "#", class: "btn btn-primary btn-large" %> 
+		You've found <a href="http://reidpearson.com"> Reid Pearson's <a/> Ruby project!
+
+	</p>
+	<p>
+		<%= link_to "Sign up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %> 
 	</p>
 </div>
-
-
-
+<% end %>

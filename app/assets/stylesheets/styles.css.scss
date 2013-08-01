@@ -3,20 +3,29 @@
 @import url(http://fonts.gootleapis.com/css?family=Oxygen);*/
 
 $navbarBackgroundHighlight: white;
-$navbarBackground: white;
+$navbarBackground: gray;
 $btnPrimaryBackground: blue;
 
 @import 'bootstrap';
 
 body {
 		padding-top: 60px;
+		padding-right: 60px;
+		padding-left: 60px
 		}
+
+img{
+	border:  8px solid #4682b4;
+	height: 300px;
+	width: 800px
+}
 
 @import 'bootstrap-responsive';
 
 .footer {
 	margin-top: 50px;
 	color: $grayLight;
+	
 	a{ 
 		color: gray;
 	}
