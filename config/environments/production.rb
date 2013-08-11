@@ -78,6 +78,5 @@ Omrails::Application.configure do
     }
   }
 
-end
 
 end
